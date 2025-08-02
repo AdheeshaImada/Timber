@@ -1,0 +1,79 @@
+# Ignore Visual Studio temporary files
+.vs/
+
+# Widows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio temp directories
+.vs/
+ipch/
+*.opensdf
+*.sdf
+*.cachefile
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+ARM/
+[Bb]in/
+[Oo]bj/
+*.obj
+*.pdb
+*.ilk
+*.log
+*.tlog
+
+# Auto-generated files
+*.vcxproj.user
+*.VC.db
+*.VC.VC.opendb
+
+# Compiled Binaries / Outputs
+
+*.exe
+*.dll
+*.lib
+*.exp
+*.app
+*.iso
+*.class
+*.jar
+
+# Other Development tools
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# Qt Creator
+*.pro.user
+*.qmake.stash
+
+# Code::Blocks
+*.depend
+*.layout
+
+# Miscellaneous
+
+# Logs
+*.log
+
+# IDEs/editors
+.idea/
+*.swp
+*.swo
+*.bak
