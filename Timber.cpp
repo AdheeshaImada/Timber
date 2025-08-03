@@ -18,5 +18,29 @@ int main() {
 	// Create and open a window for the game
 	RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
 
+	// Game loop
+	while (window.isOpen()) {
+
+		//handle the player inputs
+
+		// Exit
+		if (Keyboard::isKeyPressed(Keyboard::Escape)) {
+			window.close();
+		}
+
+		// Update the scene
+
+		// Draw the scene
+
+		//clear everything from last frame
+		window.clear();
+
+		//Draw game scene here
+
+		// Show everything we just draw
+		window.display();
+
+	}
+
 	return 0;
 }
