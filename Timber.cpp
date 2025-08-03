@@ -18,6 +18,21 @@ int main() {
 	// Create and open a window for the game
 	RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
 
+	// Create a texture to hold a graphic on the GPU
+	Texture textureBackground;
+
+	// Load a graphic into the texture
+	textureBackground.loadFromFile("graphics/background.png");
+
+	// Create a sprite
+	Sprite spriteBackground;
+
+	// Attach the texture to the sprite
+	spriteBackground.setTexture(textureBackground);
+
+	// Attach the texture to the sprite
+	spriteBackground.setPosition(0, 0);
+
 	// Game loop
 	while (window.isOpen()) {
 
@@ -30,12 +45,11 @@ int main() {
 
 		// Update the scene
 
-		// Draw the scene
-
 		//clear everything from last frame
 		window.clear();
 
 		//Draw game scene here
+		window.draw(spriteBackground);
 
 		// Show everything we just draw
 		window.display();
